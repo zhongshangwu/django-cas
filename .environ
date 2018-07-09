@@ -1,0 +1,6 @@
+
+DJANGO_DEBUG = True
+# DJANGO_SETTINGS_MODULE=myapp.settings.dev
+SECRET_KEY=your-secret-key
+DATABASE_URL=mysql://root:yLKGHEZ+haja6Nnboa5KygoDeA=@127.0.0.1:3306/django_cas
+USE_DOCKER=yes
