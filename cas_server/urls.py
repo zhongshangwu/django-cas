@@ -1,4 +1,4 @@
-"""django_cas URL Configuration
+"""cas_server URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.0/topics/http/urls/
@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from cas_server.views import DemoView
+
+admin.autodiscover()
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('demo', DemoView.as_view(), name="demo")
 ]

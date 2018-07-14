@@ -268,7 +268,7 @@ tags
 
 ### Project template
 
-django_cas/media/
+cas_server/media/
 
 .pytest_cache/
 .env

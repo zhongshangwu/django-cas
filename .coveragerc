@@ -1,5 +1,15 @@
 [run]
-include = django_cas/*
-omit = *migrations*, *tests*
+include = cas_server/*
+omit =
+    manage.py
+    cas_server/apps.py
+    cas_server/wsgi.py
+    cas_server/settings/local.py
+    cas_server/settings/production.py
+    cas_server/migrations/*
 plugins =
     django_coverage_plugin
+
+[report]
+fail_under = 85
+show_missing = true
